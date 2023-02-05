@@ -1,10 +1,10 @@
 variable "domain_name" {
   default     = "ktaltproject.me"
   type        = string
-  description = "Domain name"
+  description = "My Domain name"
 }
 
-# get hosted zone details
+# hosted zone details
 resource "aws_route53_zone" "hosted_zone" {
   name = var.domain_name
   tags = {
